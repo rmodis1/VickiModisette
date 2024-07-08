@@ -27,8 +27,12 @@
     <None Include="wwwroot\media\**\*">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	</None>
+    <Folder Include="Models\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Models\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="App_Plugins\icons\Layout 12.svg" />
     <None Include="App_Plugins\icons\Layout 3-6-3.svg" />
