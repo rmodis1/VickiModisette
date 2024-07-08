@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using Umbraco.Community.BlockPreview;
 
 namespace VickiModisette
@@ -36,6 +37,11 @@ namespace VickiModisette
                 .AddWebsite()
                 .AddComposers()
                 .Build();
+
+            services.AddControllers();
+
+            services.AddDbContext<ContactContext>(
+                options => options.UseSqlite("$\"Data Source = contacts.db\""));
         }
 
         /// <summary>

@@ -21,6 +21,9 @@ namespace VickiModisette
 				entity.Property(e => e.LastName).HasColumnName("lastName");
 				entity.Property(e => e.Email).HasColumnName("email");
 			});
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+			 => optionsBuilder.UseSqlite($"Data Source = contacts.db");
     }
 }
 

@@ -11,6 +11,14 @@
 	  <PackageReference Include="Our.Umbraco.UmbNav.Web" Version="3.0.0" />
 	  <PackageReference Include="System.Drawing.Common" Version="8.0.0" />
 	  <PackageReference Include="Umbraco.Cms" Version="13.4.0" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.6" />
+	  <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="4.8.0" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.6" />
+	  <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.8.0" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.6">
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	    <PrivateAssets>all</PrivateAssets>
+	  </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
@@ -28,10 +36,12 @@
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	</None>
     <Folder Include="Models\" />
+    <Folder Include="Controllers\" />
   </ItemGroup>
 
   <ItemGroup>
     <None Remove="Models\" />
+    <None Remove="Controllers\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App_Plugins\icons\Layout 12.svg" />
