@@ -1,4 +1,4 @@
-@using UmbNav.Core.Extensions
+﻿@using UmbNav.Core.Extensions
 @inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Web.Common.PublishedModels.SiteSettings>
 @using Microsoft.AspNetCore.Http
 @inject IHttpContextAccessor HttpContextAccessor
@@ -14,9 +14,7 @@
 <header class="screen--header sticky-top shadow-b bg-light pb-1">
     <nav class="container-xxl navbar navbar-nav navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/">
-                <img src="@Model.Logo?.GetCropUrl())" />
-            </a>
+            <h1>Vicki Modisette</h1>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

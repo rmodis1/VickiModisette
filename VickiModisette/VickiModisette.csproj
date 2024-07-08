@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0" />
 	  <PackageReference Include="Our.Umbraco.UmbNav.Web" Version="3.0.0" />
 	  <PackageReference Include="System.Drawing.Common" Version="8.0.0" />
 	  <PackageReference Include="Umbraco.Cms" Version="13.4.0" />
@@ -50,4 +51,5 @@
   </PropertyGroup>
 
   
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Umbraco.Web.UI' " />
 </Project>
