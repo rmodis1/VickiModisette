@@ -3,9 +3,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace VickiModisette.Models
 {
-	public class ContactModel
+	public class Contact
 	{
-		public int ClientId { get; set; }
+		public int Id { get; set; }
 		[Required]
 		public string FirstName { get; set; }
         [Required]
